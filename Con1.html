@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <style>
+      .hi {
+       margin:70px;
+       text-align: center;
+       } 
+        
+        body{
+            background-image: linear-gradient(to right, grey, lightblue, Grey);
+ height: 100vh;
+ background-size: cover;
+  display: top;
+  align-items: center;
+  justify-content: center;
+        }
+           .container {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+       }
+       
+      .hi h3 {
+           color:black;
+           font-style:italic;
+       }
+       span {
+           color:Yellow;
+       }
+     .hap{
+         color:#3388FF;
+     }
+    .hi h2 {
+        color:Green;
+        font-size:20px;
+        
+    }
+  .hi h4 {
+      color:White;
+  }
+ .end {
+      color:white;
+  }
+ .hep {
+     color:blue;
+ }
+.lib {
+    background-color:red;
+}
+ .leb {
+    background-color:blue;
+}
+
+
+ .lab {
+    background-color: green;
+}
+
+ .lub {
+    background-color: purple;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+   <div class="hi">
+       
+    <h3>Conversion <br><br> <span class="hap">For</span> <span><br><br> Fish, Shrimps, Clams, etc.</span><br><br><span class="hep">In The Local Market </span></h3>
+    <form>
+    <input type="number" placeholder="Enter Kilograms" id="kmilk">
+    
+    </form>
+    
+    <div id="output">
+        
+   <div class="lib"> <h4>Price of Milk Fish:</h4>
+    <div id="price"></div></div>
+    
+    
+    
+  <div class="leb">   <h4>Price of Tilapia:</h4>
+    <div id="priceT"></div>
+</div>
+
+<div class="lab"> 
+<h4>Price of Shrimp:</h4>
+    <div id="priceS"></div>
+</div>
+<div class="lub"> 
+<h4>Price of Clams:</h4>
+    <div id="priceC"></div> </div>
+    </div>
+    </div>
+   </div>
+    <script>
+        
+  document.getElementById("output").style.visibility = "hidden";
+document.getElementById("kmilk").addEventListener("input", function(e) {
+document.getElementById("output").style.visibility = "visible";
+   let kilo = e.target.value;
+  document.getElementById("price").innerHTML = kilo * 120;
+
+   
+  document.getElementById("priceT").innerHTML = kilo * 130 ;
+
+document.getElementById("priceS").innerHTML = kilo * 80;
+
+document.getElementById("priceC").innerHTML = kilo * 70;
+});
+    </script>    
+    
+</body>
+
+<center>
+    <h1 class="end">If you Memorize The Conversion  <br> <span>Try This Exercise </span></h1>
+    <a href="Con2.html">Conversion Quiz</a> </center>
+</html>
